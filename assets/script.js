@@ -7,7 +7,7 @@ var uvIndexEl = $("#uvIndex");
 var pastList = $("#past");
 var forecastEl = $("#forecast");
 
-var APIKey = "166a433c57516f51dfab1f7edaed8413";
+var APIKey = "77876012ad238b72189989cbc66caa6a";
 var pastSearches = [];
 
 renderPastSearches();
@@ -37,7 +37,7 @@ function renderPastSearches() {
 }
 
 function getWeather(location) {
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=imperial&appid=" + APIKey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + location + APIKey;
 
   $.ajax({
     url: queryURL,
